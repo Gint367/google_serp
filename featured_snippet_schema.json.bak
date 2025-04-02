@@ -1,0 +1,27 @@
+{
+    "name": "Google Featured Snippet",
+    "baseSelector": "div.yp1CPe.wDYxhc.NFQFxe.viOShc.LKPcQc",
+    "fields": [
+        {
+            "name": "snippet",
+            "selector": "div[data-attrid='wa:/description'] span.ILfuVd span.hgKElc",
+            "type": "text"
+        },
+        {
+            "name": "date",
+            "selector": "div[data-attrid='wa:/description'] span.kX21rb.ZYHQ7e",
+            "type": "text"
+        },
+        {
+            "name": "title",
+            "selector": "h3.LC20lb.MBeuO.DKV0Md",
+            "type": "text"
+        },
+        {
+            "name": "link",
+            "selector": "a.zReHs",
+            "type": "attribute",
+            "attribute": "href"
+        }
+    ]
+}

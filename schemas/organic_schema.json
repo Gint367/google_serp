@@ -1,0 +1,32 @@
+{
+    "name": "Google Search Results",
+    "baseSelector": "div.MjjYud",
+    "fields": [
+        {
+            "name": "title",
+            "selector": "h3.LC20lb",
+            "type": "text"
+        },
+        {
+            "name": "link",
+            "selector": "a.zReHs",
+            "type": "attribute",
+            "attribute": "href"
+        },
+        {
+            "name": "snippet",
+            "selector": "div.VwiC3b",
+            "type": "text"
+        },
+        {
+            "name": "date",
+            "selector": "span.YrbPuc",
+            "type": "text"
+        },
+        {
+            "name": "attributes",
+            "selector": "div.TXwUJf",
+            "type": "text"
+        }
+    ]
+}

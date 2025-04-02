@@ -1,0 +1,44 @@
+{
+    "name": "Google Search Featured Snippet",
+    "baseSelector": "div[id='rso'] > div > div[class^='MjjYud'] > div[jscontroller='SC7lYd']",
+    "fields": [
+        {
+            "name": "title",
+            "selector": "a > h3",
+            "type": "text"
+        },
+        {
+            "name": "link",
+            "selector": "a",
+            "type": "attribute",
+            "attribute": "href"
+        },
+        {
+            "name": "snippet",
+            "selector": "div[data-snf='nke7rc'] > div",
+            "type": "text"
+        },
+        {
+            "name": "date",
+            "selector": "div[data-snf='nke7rc'] > div > span[class='YrbPuc']",
+            "type": "text"
+        },
+        {
+            "name": "sitelinks",
+            "type": "list",
+            "selector": "div[class='B6fmyf byrV5b Mg1HEd']",
+            "fields": [
+                {
+                    "name": "title",
+                    "selector": "div[class='HGLrXd ojE3Fb'] > div[class='q0vns'] > div[class='CA5RN'] > div > span[class='VuuXrf']",
+                    "type": "text"
+                },
+                {
+                    "name": "link",
+                    "selector": "div[class='HGLrXd ojE3Fb'] > div[class='q0vns'] > div[class='CA5RN'] > div > cite",
+                    "type": "text"
+                }
+            ]
+        }
+    ]
+}
